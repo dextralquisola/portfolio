@@ -1,0 +1,146 @@
+.main-container-grid {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(3, 6, 16); /* dark base color */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px; /* grid spacing */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.project-content-container,
+.content-container {
+  height: 100vh;
+  margin: 0px 250px 0px 250px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(3, 6, 16); /* dark base color */
+  padding-top: 100px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px 100px 0px 100px;
+}
+
+.my-info-container p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.role {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.description {
+  font-size: 18px;
+  color: rgb(230, 230, 230);
+}
+
+.sub-description {
+  font-size: 18px;
+}
+
+.skills-row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-row p {
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+
+  color: black;
+  background-color: white;
+
+  margin: 0px 5px 0px 5px;
+  padding: 2px 5px 2px 5px;
+}
+
+.project-content-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-size: 42px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 300px;
+  background-color: rgb(9, 13, 24);
+
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(31, 41, 55);
+}
+
+.project-image-container {
+  margin: 10px;
+  flex: 2;
+}
+
+.project-title-container {
+  flex: 1;
+}
+
+.project-title-container p {
+  color: white;
+  text-align: center;
+}
