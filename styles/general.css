@@ -3,7 +3,7 @@
 }
 
 body {
-  min-width: 500px;
+  min-width: 430px;
   margin: 0;
   background: linear-gradient(to bottom, rgb(3, 6, 16), rgb(0, 1, 2));
 }
