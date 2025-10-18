@@ -1,7 +1,6 @@
 .main-container-grid {
   margin: 0;
   height: 100vh;
-  background-color: rgb(3, 6, 16); /* dark base color */
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.05) 1px,
       transparent 1px
@@ -13,16 +12,15 @@
 }
 
 .project-content-container,
-.content-container {
+.content-container,
+.contact-container {
   height: 100vh;
-  margin: 0px 250px 0px 250px;
+  margin: 0px 15%;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-
-  background-color: rgb(3, 6, 16); /* dark base color */
   padding-top: 100px;
 }
 
@@ -77,6 +75,7 @@
   border-color: white;
   border-style: solid;
 
+  white-space: nowrap;
   color: black;
   background-color: white;
 
@@ -105,13 +104,104 @@
 
 .project-image {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+@media (max-width: 550px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .my-info-container {
+    padding: 0px 15px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+    text-overflow: ellipsis;
+  }
+
+  .sub-description {
+    font-size: 18px;
+  }
+
+  .skills-row p {
+    white-space: nowrap;
+    font-size: 12px;
+    border-radius: 15px;
+    border-color: white;
+    border-style: solid;
+
+    color: black;
+    background-color: white;
+
+    margin: 0px 2px 0px 2px;
+    padding: 1px 3px 1px 3px;
+  }
+
+  .project-content-container {
+    height: 220vh;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .role {
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+    color: rgb(230, 230, 230);
+  }
+
+  .sub-description {
+    font-size: 18px;
+  }
+
+  .my-info-container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .my-info-container {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .project {
@@ -122,7 +212,6 @@
   align-items: center;
 
   width: 100%;
-  height: 300px;
   background-color: rgb(9, 13, 24);
 
   border-radius: 10px;
@@ -137,10 +226,80 @@
 }
 
 .project-title-container {
+  margin: 30px 0px;
   flex: 1;
 }
 
 .project-title-container p {
   color: white;
   text-align: center;
+}
+
+.contact-container p {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-container {
+  height: 65vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-header-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+
+.contact-input-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+
+.contact-title {
+  font-size: 38px;
+}
+
+.resume-btn-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-icon-btn {
+  color: white;
+  margin-right: 10px;
+  height: 20px;
+}
+
+.pin-icon,
+.social-icon {
+  height: 30px;
+  margin: 0px 5px;
+}
+
+
+.pin-icon {
+  height: 20px;
+}
+
+.location-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }

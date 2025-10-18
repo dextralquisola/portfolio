@@ -1,0 +1,77 @@
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  resize: vertical;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+.resume-btn,
+.form-btn {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  background: linear-gradient(to right, rgb(60, 130, 246), rgb(167, 85, 247));
+}
+
+.form-btn:hover,
+.resume-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #aaa;
+}
+
+form {
+  width: 100%;
+}
+
+.resume-btn {
+  width: 50%;
+  border: 0.5px solid rgb(31, 41, 55);
+  background: transparent;
+  transition: background-color 0.5s;
+}
+
+.resume-btn:hover {
+  background-color: rgb(17, 24, 39);
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   top: 0;
-  right: 50px;
+  right: 0px;
   left: 0;
 
   display: flex;
@@ -13,10 +13,35 @@
   height: 100px;
 
   background-color: transparent;
+  padding: 0px 15%;
 }
 
 .header p {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
   font-size: 24px;
   color: white;
+}
+
+.header p:hover {
+  font-size: 26px;
+  transition: font-size 0.15s;
+  color: rgb(168, 115, 223);
+}
+
+@media (max-width: 550px) {
+  .header {
+    padding: 0px 5%;
+  }
+
+  .header p {
+    padding: 0px 5px 0px 5px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .header p:hover {
+    font-size: 18px;
+    transition: font-size 0.15s;
+    color: rgb(168, 115, 223);
+  }
 }
